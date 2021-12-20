@@ -1017,9 +1017,9 @@ line-height: 1.17;
 }
 
 .icon-main-bottom{
-    border: 1px solid #AFB1B8;
+   /* border: 1px solid #AFB1B8;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 4px;*/
     width: 170px ;
     height:  92px;
      display: flex;
@@ -1027,9 +1027,17 @@ line-height: 1.17;
         align-items: center; 
         cursor: pointer;
 }
+.silka-na-brend{
+    transition-property: border ;
+    transition-duration: 250ms ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
 
 
-.icon-main-bottom:hover{
+.silka-na-brend:hover{
     border: 1px solid var(--color-a);
     border-radius: 4px;
 }
@@ -1038,6 +1046,7 @@ line-height: 1.17;
     transition-duration: 250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-main-bottom:hover .razmer-logotipa{
     fill: var(--color-a) ;
 }
@@ -1087,6 +1096,7 @@ display: flex;
    transform: translate(-50%, -50%);
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
     
 }
@@ -1189,9 +1199,27 @@ line-height: 28px;
     position: relative;
     overflow: hidden;
 }
+.silki-na-sami-obertka-footer-icon{
+    width:  44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.silki-na-sami-obertka-footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.name{
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop{
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
-
+}
 
 
 
